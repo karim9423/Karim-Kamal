@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Best Buy API Test" >
+    <listeners>
+        <listener class-name="report.listeners.TestListener"/>
+        <listener class-name="report.listeners.AnnotationTransformer"/>
+    </listeners>
+    <test name="Products Test">
+        <classes>
+            <class name="api.test.ProductsEndpointTest"/>
+        </classes>
+    </test>
+    <test name="Categories Test">
+        <classes>
+            <class name="api.test.CategoriesEndpointTest"/>
+        </classes>
+    </test>
+    <test name="Services Test">
+        <classes>
+            <class name="api.test.ServicesEndpointTest"/>
+        </classes>
+    </test>
+    <test name="Stores Test">
+        <classes>
+            <class name="api.test.StoresEndpointTest"/>
+        </classes>
+    </test>
+</suite>

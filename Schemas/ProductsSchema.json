@@ -1,0 +1,222 @@
+{
+  "type": "object",
+  "required": [
+    "total",
+    "limit",
+    "skip",
+    "data"
+  ],
+  "properties": {
+    "total": {
+      "type": "integer"
+    },
+    "limit": {
+      "type": "integer"
+    },
+    "skip": {
+      "type": "integer"
+    },
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "type",
+          "price",
+          "upc",
+          "shipping"
+        ],
+        "properties": {
+          "id": {
+            "$id": "#root/data/items/id",
+            "title": "Id",
+            "type": "integer",
+            "examples": [
+              127687
+            ],
+            "default": 0
+          },
+          "name": {
+            "$id": "#root/data/items/name",
+            "title": "Name",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "string"
+            ],
+            "pattern": "^.*$"
+          },
+          "type": {
+            "$id": "#root/data/items/type",
+            "title": "Type",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "string"
+            ],
+            "pattern": "^.*$"
+          },
+          "price": {
+            "$id": "#root/data/items/price",
+            "title": "Price",
+            "type": "number",
+            "examples": [
+              0
+            ],
+            "default": 0
+          },
+          "upc": {
+            "$id": "#root/data/items/upc",
+            "title": "Upc",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "string"
+            ],
+            "pattern": "^.*$"
+          },
+          "shipping": {
+            "$id": "#root/data/items/shipping",
+            "title": "Shipping",
+            "type": "number",
+            "examples": [
+              0
+            ],
+            "default": 0
+          },
+          "description": {
+            "$id": "#root/data/items/description",
+            "title": "Description",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "string"
+            ],
+            "pattern": "^.*$"
+          },
+          "manufacturer": {
+            "$id": "#root/data/items/manufacturer",
+            "title": "Manufacturer",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "string"
+            ],
+            "pattern": "^.*$"
+          },
+          "model": {
+            "$id": "#root/data/items/model",
+            "title": "Model",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "string"
+            ],
+            "pattern": "^.*$"
+          },
+          "url": {
+            "$id": "#root/data/items/url",
+            "title": "Url",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "string"
+            ],
+            "pattern": "^.*$"
+          },
+          "image": {
+            "$id": "#root/data/items/image",
+            "title": "Image",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "string"
+            ],
+            "pattern": "^.*$"
+          },
+          "createdAt": {
+            "$id": "#root/data/items/createdAt",
+            "title": "Createdat",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "2016-11-17T17:58:03.298Z"
+            ],
+            "pattern": "^.*$"
+          },
+          "updatedAt": {
+            "$id": "#root/data/items/updatedAt",
+            "title": "Updatedat",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "2022-03-27T19:41:43.683Z"
+            ],
+            "pattern": "^.*$"
+          },
+          "categories": {
+            "$id": "#root/data/items/categories",
+            "title": "Categories",
+            "type": "array",
+            "default": [],
+            "items": {
+              "$id": "#root/data/items/categories/items",
+              "title": "Items",
+              "type": "object",
+              "required": [
+                "id",
+                "name",
+                "createdAt",
+                "updatedAt"
+              ],
+              "properties": {
+                "id": {
+                  "$id": "#root/data/items/categories/items/id",
+                  "title": "Id",
+                  "type": "string",
+                  "default": "",
+                  "examples": [
+                    "abcat0208002"
+                  ],
+                  "pattern": "^.*$"
+                },
+                "name": {
+                  "$id": "#root/data/items/categories/items/name",
+                  "title": "Name",
+                  "type": "string",
+                  "default": "",
+                  "examples": [
+                    "Alkaline Batteries"
+                  ],
+                  "pattern": "^.*$"
+                },
+                "createdAt": {
+                  "$id": "#root/data/items/categories/items/createdAt",
+                  "title": "Createdat",
+                  "type": "string",
+                  "default": "",
+                  "examples": [
+                    "2016-11-17T17:57:04.285Z"
+                  ],
+                  "pattern": "^.*$"
+                },
+                "updatedAt": {
+                  "$id": "#root/data/items/categories/items/updatedAt",
+                  "title": "Updatedat",
+                  "type": "string",
+                  "default": "",
+                  "examples": [
+                    "2016-11-17T17:57:04.285Z"
+                  ],
+                  "pattern": "^.*$"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

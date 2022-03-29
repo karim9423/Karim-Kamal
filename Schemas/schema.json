@@ -1,0 +1,175 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1648423905.json",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "id": {
+      "$id": "#root/id",
+      "title": "Id",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "abcat0010000"
+      ],
+      "pattern": "^.*$"
+    },
+    "name": {
+      "$id": "#root/name",
+      "title": "Name",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "Gift Ideas"
+      ],
+      "pattern": "^.*$"
+    },
+    "createdAt": {
+      "$id": "#root/createdAt",
+      "title": "Createdat",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "2016-11-17T17:57:04.285Z"
+      ],
+      "pattern": "^.*$"
+    },
+    "updatedAt": {
+      "$id": "#root/updatedAt",
+      "title": "Updatedat",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "2016-11-17T17:57:04.285Z"
+      ],
+      "pattern": "^.*$"
+    },
+    "subCategories": {
+      "$id": "#root/subCategories",
+      "title": "Subcategories",
+      "type": "array",
+      "default": [],
+      "items":{
+        "$id": "#root/subCategories/items",
+        "title": "Items",
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "createdAt",
+          "updatedAt"
+        ],
+        "properties": {
+          "id": {
+            "$id": "#root/subCategories/items/id",
+            "title": "Id",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "abcat0020004"
+            ],
+            "pattern": "^.*$"
+          },
+          "name": {
+            "$id": "#root/subCategories/items/name",
+            "title": "Name",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "Unique Gifts"
+            ],
+            "pattern": "^.*$"
+          },
+          "createdAt": {
+            "$id": "#root/subCategories/items/createdAt",
+            "title": "Createdat",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "2016-11-17T17:57:04.285Z"
+            ],
+            "pattern": "^.*$"
+          },
+          "updatedAt": {
+            "$id": "#root/subCategories/items/updatedAt",
+            "title": "Updatedat",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "2016-11-17T17:57:04.285Z"
+            ],
+            "pattern": "^.*$"
+          }
+        }
+      }
+
+    },
+    "categoryPath": {
+      "$id": "#root/categoryPath",
+      "title": "Categorypath",
+      "type": "array",
+      "default": [],
+      "items":{
+        "$id": "#root/categoryPath/items",
+        "title": "Items",
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "createdAt",
+          "updatedAt"
+        ],
+        "properties": {
+          "id": {
+            "$id": "#root/categoryPath/items/id",
+            "title": "Id",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "abcat0010000"
+            ],
+            "pattern": "^.*$"
+          },
+          "name": {
+            "$id": "#root/categoryPath/items/name",
+            "title": "Name",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "Gift Ideas"
+            ],
+            "pattern": "^.*$"
+          },
+          "createdAt": {
+            "$id": "#root/categoryPath/items/createdAt",
+            "title": "Createdat",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "2016-11-17T17:57:04.285Z"
+            ],
+            "pattern": "^.*$"
+          },
+          "updatedAt": {
+            "$id": "#root/categoryPath/items/updatedAt",
+            "title": "Updatedat",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "2016-11-17T17:57:04.285Z"
+            ],
+            "pattern": "^.*$"
+          }
+        }
+      }
+
+    }
+  }
+}

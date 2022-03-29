@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Facebook Testing" >
+    <listeners>
+        <listener class-name="report.listeners.TestListener"/>
+        <listener class-name="report.listeners.AnnotationTransformer"/>
+    </listeners>
+    <test name="Facebook Registration">
+        <classes>
+            <class name="ui.Tests.TestFacebookRegistration"/>
+        </classes>
+    </test>
+    <test name="Facebook login">
+        <classes>
+            <class name="ui.Tests.TestFacebookLogin"/>
+        </classes>
+    </test>
+</suite>

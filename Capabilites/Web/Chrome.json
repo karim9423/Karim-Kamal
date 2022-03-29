@@ -1,0 +1,21 @@
+{
+  "chromeArguments" : ["new-window", "test-type", "--start-maximized", "fast-start","--privileged", "--verbose", "--disable-dev-shm-usage", "--no-sandbox","--whitelisted-ips", "--disable-gpu","--ignore-certificate-errors"],
+  "desiredCapabilities" : {
+    "platform" : "ANY",
+    "javascriptEnabled" : true,
+    "acceptSslCerts" : true,
+    "acceptInsecureCerts":true,
+    "browserName" : "chrome",
+    "unexpectedAlertBehaviour" : "ignore",
+    "rotatable" : false,
+    "locationContextEnabled" : true,
+    "version" : "",
+    "databaseEnabled" : true,
+    "browserConnectionEnabled" : true,
+    "webStorageEnabled" : true,
+    "nativeEvents" : false,
+    "webdriver.remote.quietExceptions" : false,
+    "applicationCacheEnabled" : true
+    
+  }
+}
